@@ -1,0 +1,87 @@
+body{
+    margin : 0 !important;
+}
+
+.navbar{
+    padding: 20px;
+    border: 20px;
+    margin-top: 20px;
+    height: 20px;
+    background-color: grey;
+}
+.navbar a{
+    text-decoration: none;
+    color: black;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+    /* margin-bottom: 10%; */
+}
+.warna{
+    padding-top: 40px;
+}
+.warna, .unggu, .biru, .merah, .hitam, .coklat{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+}
+.unggu{
+    background-color: purple;
+}
+.biru{
+    background-color: blue;
+}
+.merah{
+    background-color: red;
+}
+.hitam{
+    background-color: black;
+}
+.coklat{
+    background-color: brown;
+}
+.content img{
+    width: 300px;
+    border-radius: 30px;
+    padding: 20px;
+}
+.content .about{
+    padding-top: 60px;
+}
+.content .about .title{
+    padding-bottom: 10%;
+}
+.content .about p{
+    font-weight: 500;
+}
+.content .about button{
+background-color: pink;
+width: 60%;
+}
+footer .judul{
+    text-align: center !important;
+}
+footer{   
+    padding: 10px;
+    background-color: grey;
+    color: black;
+}
+footer .headfooter{
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+} 
+footer a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0px;
+    margin: 0px;
+    color: black;
+}
+
+
+
