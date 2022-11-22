@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Bootstrap</title>
+    <title>Form Shipping</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
@@ -66,137 +66,105 @@
       <nav class="breadcrumb">
         <a class="breadcrumb-item" href="#">Home</a>
         <a class="breadcrumb-item" href="#">Office Room</a>
-        <span class="breadcrumb-item active" aria-current="page">Detail</span>
+        <a class="breadcrumb-item" href="index.html">Detail</a>
+        <span class="breadcrumb-item active" aria-current="page">Shipping</span>
       </nav>
-
-      <div
-        class="alert alert-warning alert-dismissible fade show d-none"
-        role="alert"
-        id="divAlert"
-      >
-        <p class="m-0 p-0" id="alertText"></p>
-        <button type="button" class="btn-close" id="btnClose"></button>
-      </div>
-      <div class="container my-5">
-        <div class="row">
-          <div class="col-2 d-flex flex-column justify-content-between">
-            <img
-              src="./asset/Asset Latihan Bootstrap/side-1.png"
-              alt="side-1"
-              style="width: 50%"
-            />
-            <img
-              src="./asset/Asset Latihan Bootstrap/side-2.png"
-              alt="side-2"
-              style="width: 50%"
-            />
-            <img
-              src="./asset/Asset Latihan Bootstrap/side-3.png"
-              alt="side-3"
-              style="width: 50%"
-            />
-            <img
-              src="./asset/Asset Latihan Bootstrap/side-2.png"
-              alt="side-3"
-              style="width: 50%"
-            />
-            <img
-              src="./asset/Asset Latihan Bootstrap/side-1.png"
-              alt="side-3"
-              style="width: 50%"
-            />
-          </div>
-          <div class="col-6">
-            <img
-              src="./asset/Asset Latihan Bootstrap/chair.png"
-              alt=""
-              id="imgParent"
-            />
-          </div>
-          <div class="col-4 d-flex flex-column justify-content-start">
-            <div class="judul">
-              <h3>Chair Thatty</h3>
-              <p>IDR 12.000.000</p>
-              <a
-                class="btn btn-light"
-                href="./form_shipping.html"
-                role="button"
-              >
-                <img src="./asset/Asset Latihan Bootstrap/cart3.svg" alt="" />
-                Add to Cart</a
-              >
-              <hr />
+      <div class="d-flex justify-content-center my-5">
+        <div class="col-md-4">
+          <form
+            action=""
+            class="shipping p-5"
+            id="formShipping"
+            style="border: 3px solid pink"
+          >
+            <h1 style="text-align: center">Shipping Form</h1>
+            <div class="row">
+              <div class="mb-3 col-md-6">
+                <label for="first name">First Name</label>
+                <input
+                  class="form-control"
+                  type="text"
+                  placeholder="Enter your first name"
+                  id="firstName"
+                  required
+                />
+              </div>
+              <div class="mb-3 col-md-6">
+                <label for="phone number">Phone Number</label>
+                <input
+                  class="form-control"
+                  type="number"
+                  placeholder="Enter Phone number"
+                  id="phoneNumber"
+                />
+              </div>
+              <div class="mb-3 col-md-6">
+                <label for="last name">Last Name</label>
+                <input
+                  class="form-control"
+                  type="text"
+                  placeholder="Enter your last name"
+                  id="lastName"
+                  required
+                />
+              </div>
+              <div class="mb-3 col-md-6">
+                <label for="city">City</label>
+                <input
+                  class="form-control"
+                  type="text"
+                  placeholder="Enter city"
+                  id="city"
+                />
+              </div>
+              <div class="mb-3 col-md-6">
+                <label for="first name">Email Address</label>
+                <input
+                  class="form-control"
+                  type="email"
+                  placeholder="Enter email"
+                  id="email"
+                />
+              </div>
+              <div class="mb-3 col-md-6">
+                <label for="postal code">Postal Code</label>
+                <input
+                  class="form-control"
+                  type="text"
+                  placeholder="Enter postal code"
+                  id="postalCode"
+                />
+              </div>
+              <label for="">Address</label>
+              <div class="input-group">
+                <textarea
+                  class="form-control"
+                  name=""
+                  id="address"
+                  placeholder="Enter address"
+                  required
+                ></textarea>
+              </div>
+              <div class="p-3 col-md-6">
+                <button
+                  type="submit"
+                  class="btn"
+                  style="background-color: pink"
+                  id="btnSubmitShipping"
+                >
+                  Submit
+                </button>
+              </div>
             </div>
-            <div class="title">
-              <h4>About the product:</h4>
-              <p>
-                Tailored to a level of perfection synonymous with that of a
-                Savile Row suit and with understated quality in the detail,
-                Jetty has been influenced by timeless 1950s style.
-              </p>
-              <p>
-                Providing a subtle nod to the past, Jetty also provides a
-                perfect solution for the way we work today. A comprehensive
-                product family, Jetty features a veriety of elegant chairs and
-                sofas.
-              </p>
-            </div>
-          </div>
+          </form>
         </div>
       </div>
-      <div class="content py-5">
-        <h2>Complete Your Room</h2>
-        <h2>With What We Designed</h2>
-        <div class="d-flex justify-content-between" id="">
-          <div class="card">
-            <img
-              src="./asset/Asset Latihan Bootstrap/chair-4.png"
-              class="card-img-top"
-              alt="..."
-              id="img1"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Cangkir Mauttie</h5>
-              <p class="card-text">IDR 89.300.000</p>
-            </div>
-          </div>
-          <div class="card">
-            <img
-              src="./asset/Asset Latihan Bootstrap/chair-3.png"
-              class="card-img-top"
-              alt="..."
-              id="img2"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Saman Kakka</h5>
-              <p class="card-text">IDR 14.500.000</p>
-            </div>
-          </div>
-          <div class="card">
-            <img
-              src="./asset/Asset Latihan Bootstrap/chair-2.png"
-              class="card-img-top"
-              alt="..."
-              id="img3"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Lino Dino</h5>
-              <p class="card-text">IDR 22.000.000</p>
-            </div>
-          </div>
-          <div class="card">
-            <img
-              src="./asset/Asset Latihan Bootstrap/chair-1.png"
-              class="card-img-top"
-              alt="..."
-              id="img4"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Syail Ammeno</h5>
-              <p class="card-text">IDR 12.000.000</p>
-            </div>
-          </div>
-        </div>
+      <div class="alert alert-success d-none" role="alert" id="alert">
+        <h4 class="alert-heading" id="title"></h4>
+        <p id="Isi"></p>
+        <a href="index.html">
+          <button type="submit" class="btn btn-primary">Back</button>
+        </a>
       </div>
     </main>
     <footer>
@@ -225,17 +193,19 @@
         </div>
         <div class="footer">
           <h2>Special Letter</h2>
-          <form class="d-flex" id="btnSubmit">
+          <div class="input-group">
             <input
-              type="email"
+              type="search"
               class="form-control"
-              id="inputNama"
-              placeholder="Your email address"
+              placeholder="Recipient's username"
               aria-label="Recipient's username"
               aria-describedby="button-addon2"
-              required
             />
-            <button class="btn btn-outline-danger" type="submit">
+            <button
+              class="btn btn-outline-danger"
+              type="button"
+              id="button-addon2"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
@@ -249,7 +219,7 @@
                 />
               </svg>
             </button>
-          </form>
+          </div>
         </div>
       </div>
       <div class="text-center p-3 bg-danger">

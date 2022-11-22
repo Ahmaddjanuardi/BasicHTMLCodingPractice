@@ -19,7 +19,7 @@ nav img{
 .row .col-6 img{
     border-radius: 10px;
 }
-.row .col-4 button{
+.row .col-4 a{
     width: 50%;
     background-color: pink;
     border-radius: 30px;
